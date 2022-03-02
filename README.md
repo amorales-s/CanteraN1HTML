@@ -1,5 +1,5 @@
 # CanteraN1HTML
-Sofka Cantera 1 Taller 1 HTML
+Sofka Cantera 1 Taller 1 HTML.
 El taller contiene la hoja de vida, incluyendo su foto y los siguientes apartados:
 Información principal
 Experiencia laboral (mínimo 4)
