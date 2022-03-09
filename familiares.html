@@ -8,7 +8,7 @@
     <link rel="stylesheet" href="css/style.css">
     <title>REFERENCIAS FAMILIARES - RAFAEL ALEXANDER MORALES SANDOVAL</title>
 </head>
-<body>
+<body onload="main()">
     <header>
         <img class="centrar" src="img/Foto_AM.jpg"  alt="Foto Rafael Alexander Morales Sandoval">
         <h1>CURRICULUM VITAE<br>RAFAEL ALEXANDER MORALES SANDOVAL</h1>
@@ -18,44 +18,38 @@
                 <li><a href="experiencia.html">Experiencia Laboral</a></li>
                 <li><a href="personales.html">Referencias Personales</a></li>
                 <li><a href="estudios.html">Estudios Realizados</a></li>
+            </ul>
+            <select class="corazon" name="color">
+                <option value="1">Cambia Color</option> 
+                <option value="2">Blanco</option> 
+                <option value="3">Verde</option>
+                <option value="4">Rosado</option>
+                <option value="5">Original</option> 
+            </select>
         </nav>
     </header>
     <main>
-        <section class="container">
-            <div class="div-ul-li">
-                <ul type="disc">
-                    <h2>REFERENCIAS FAMILIARES</h2>
-                    <li><span><b>NUBIA IRENE SANDOVAL</b></span> 
-                        <ul type="none">
-                            <li><span><i>Parentesco:</i></span> Madre</li>
-                            <li><span><i>Dirección Residencia:</i></span> Carrera 10 No.1-25</li>
-                            <li><span><i>Teléfono:</i></span> 3103216151</li>
-                            <li><span><i>Ciudad Residencia:</i></span> Sogamoso<br></li>
-                        </ul>
-                    </li>
-                    <li><span><b>ANGELA CAROLINA MORALES SANDOVAL</b></span> 
-                        <ul type="none">
-                            <li><span><i>Parentesco:</i></span> Hermana</li>
-                            <li><span><i>Dirección Residencia:</i></span> Carrera 10 No.10-100</li>
-                            <li><span><i>Teléfono:</i></span> 3217771522</li>
-                            <li><span><i>Ciudad Residencia:</i></span> Tunja<br></li>
-                        </ul>
-                    </li>
-                    <li><span><b>ALFONSO MORALES BELLO</b></span> 
-                        <ul type="none">
-                            <li><span><i>Parentesco:</i></span> Tío</li>
-                            <li><span><i>Dirección Residencia:</i></span> Calle 1 No.12-40</li>
-                            <li><span><i>Teléfono:</i></span> 3105806130</li>
-                            <li><span><i>Ciudad Residencia:</i></span> Pore<br></li>
-                        </ul>
-                    </li>
-                </ul>
-            </div>
-        </section>
+        <h2>REFERENCIAS FAMILIARES</h2>
+        <button class="acordeon">Referencia 1</button>
+        <div class="panel">
+            <p><b>NUBIA IRENE SANDOVAL</b><br><br><i>Parentesco:</i> Madre<br><i>Dirección Residencia:</i> Carrera 10 No.1-25<br>
+                <i>Teléfono:</i> 3103216151<br><i>Ciudad Residencia:</i> Sogamoso</p>
+        </div>
+        <button class="acordeon">Referencia 2</button>
+        <div class="panel">
+            <p><b>ANGELA CAROLINA MORALES SANDOVAL</b><br><br><i>Parentesco:</i> Hermana<br><i>Dirección Residencia:</i> Carrera 10 No.10-100<br>
+                <i>Teléfono:</i> 3217771522<br><i>Ciudad Residencia:</i> Tunja</p>
+        </div>
+        <button class="acordeon">Referencia 3</button>
+        <div class="panel">
+            <p><b>ALFONSO MORALES BELLO</b><br><br><i>Parentesco:</i> Tío<br><i>Dirección Residencia:</i> Calle 1 No.12-40<br>
+                <i>Teléfono:</i> 3105806130<br><i>Ciudad Residencia:</i> Pore</p>
+        </div>
     </main>
     <footer>    
         <p>2022 - RAMS &nbsp; <a href="https://www.instagram.com/casanare_/"target="_blank"><img src="img/ico_instagram.png" alt="Icono instagram"></a> &nbsp; <a href="https://www.linkedin.com/in/rafael-alexander-morales-sandoval/"target="_blank"><img src="img/ico_linkedin.png" alt="Icono linkedin"></p></a>
         <p>Todos los derechos reservados</p>
     </footer>
+    <script src="js/app.js"></script>
 </body>
 </html>

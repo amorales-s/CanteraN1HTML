@@ -7,7 +7,7 @@
     <link rel="stylesheet" href="css/style.css">
     <title>ESTUDIOS REALIZADOS - RAFAEL ALEXANDER MORALES SANDOVAL</title>
 </head>
-<body>
+<body onload="main()">
     <header>
         <img class="centrar" src="img/Foto_AM.jpg" alt="Foto Rafael Alexander Morales Sandoval">
         <h1>CURRICULUM VITAE<br>RAFAEL ALEXANDER MORALES SANDOVAL</h1>
@@ -17,32 +17,43 @@
                 <li><a href="experiencia.html">Experiencia Laboral</a></li>
                 <li><a href="personales.html">Referencias Personales</a></li>
                 <li><a href="familiares.html">Referencias Familiares</a></li>
+            </ul>
+            <select class="corazon" name="color">
+                <option value="1">Cambia Color</option> 
+                <option value="2">Blanco</option> 
+                <option value="3">Verde</option>
+                <option value="4">Rosado</option>
+                <option value="5">Original</option> 
+            </select>
         </nav>
     </header>
     <main>
-        <section class="container">
-            <div class="div-ul-li">
-                <ul type="disc">
-                    <h2>ESTUDIOS REALIZADOS</h2>
-                    <li><span><b>Mayo 2021 - actualidad</b><br></span> DIGITAL HOUSE <br>
-                        <span> Mercado Libre & Globant<br></span>
-                        <span> CERTIFIED TECH DEVELOPER. <br><br></span></li>
-                    <li><span><b>Diciembre 2021</b><br></span> UNIVERSIDAD DE CALDAS <br>
-                        <span> MINTIC<br></span>
-                        <span>Diplomado en Habilidades de Programación Básica Misión TIC <br><br></span></li>
-                    <li><span><b>Marzo 2001</b></span> <br>UNIVERSIDAD CENTRAL<br>
-                        <span>Ingeniero de Sistemas.<br><br></span></li>
-                    <li><span><b>Noviembre 2021 - actualidad</b></span> <br>PLATZI <br>
-                        <span> Escuela de Desarrollo Web<br></span>
-                        <span>Desarrollo de Aplicaciones Web<br></span></li>     
-                </ul>
-            </div>
-        </section>
+        <h2>ESTUDIOS REALIZADOS</h2>
+        <button class="acordeon">Estudio 1</button>
+        <div class="panel">
+            <p><b>Mayo 2021 - actualidad</b><br><br><i>Instituto/Universidad:</i> DIGITAL HOUSE<br>
+                <i>Patrocinador:</i> Mercado Libre & Globant<br><i>Título:</i> CERTIFIED TECH DEVELOPER</p>
+        </div>
+        <button class="acordeon">Estudio 2</button>
+        <div class="panel">
+            <p><b>Diciembre 2021</b><br><br><i>Instituto/Universidad:</i> UNIVERSIDAD DE CALDAS<br>
+                <i>Patrocinador:</i> MINTIC<br><i>Título:</i> Diplomado en Habilidades de Programación Básica Misión TIC</p>
+        </div>
+        <button class="acordeon">Estudio 3</button>
+        <div class="panel">
+            <p><b>Marzo 2001</b><br><br><i>Instituto/Universidad:</i> UNIVERSIDAD CENTRAL<br>
+                <i>Título:</i> Ingeniero de Sistemas</p>
+        </div>
+        <button class="acordeon">Estudio 4</button>
+        <div class="panel">
+            <p><b>Noviembre 2021 - actualidad</b><br><br><i>Instituto/Universidad:</i> PLATZI<br>
+                <i>Patrocinador:</i> Escuela de Desarrollo Web<br><i>Título:</i> Desarrollo de Aplicaciones Web</p>
+        </div>
     </main>
-    <footer>
-            
+    <footer>            
         <p>2022 - RAMS &nbsp; <a href="https://www.instagram.com/casanare_/"target="_blank"><img src="img/ico_instagram.png" alt="Icono instagram"></a> &nbsp; <a href="https://www.linkedin.com/in/rafael-alexander-morales-sandoval/"target="_blank"><img src="img/ico_linkedin.png" alt="Icono linkedin"></p></a>
         <p>Todos los derechos reservados</p>
     </footer>
+    <script src="js/app.js"></script>
 </body>
 </html>

@@ -5,9 +5,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.3/css/all.css" integrity="sha384-SZXxX4whJ79/gErwcOYf+zWLeJdY/qpuqC4cAa9rOGUstPomtqpuNWT9wdPEn2fk" crossorigin="anonymous">
     <link rel="stylesheet" href="css/style.css">
+    
+
     <title>CURRICULUM VITAE DE RAFAEL ALEXANDER MORALES SANDOVAL</title>
 </head>
-<body>
+<body onload="main()">
     <header>
         <img class="centrar" src="img/Foto_AM.jpg" alt="Foto Rafael Alexander Morales Sandoval">
         <h1>CURRICULUM VITAE<br>RAFAEL ALEXANDER MORALES SANDOVAL</h1>
@@ -19,19 +21,30 @@
                 <li><a href="familiares.html">Referencias Familiares</a></li>
                 <li><a href="estudios.html">Estudios Realizados</a></li>
             </ul>
+            <select class="corazon" name="color">
+                <option value="1">Cambia Color</option> 
+                <option value="2">Blanco</option> 
+                <option value="3">Verde</option>
+                <option value="4">Rosado</option>
+                <option value="5">Original</option> 
+            </select>
         </nav>
     </header>
     <main>
         <section class="container">
-            <div class="div-ul-li">
+            <div>              
                 <ul type="disc">
                     <h2>INFORMACIÓN PRINCIPAL<br></h2>
                     <li><span class="Tit"><i>Nombre completo:</i></span> Rafael Alexander Morales Sandoval</li>
                     <li><span class="Tit"><i>Fecha de nacimiento:</i></span> 27/10/1970</li>
                     <li><span class="Tit"><i>Lugar de nacimiento:</i></span> Sogamoso</li>
                 </ul>
+                <!-- <h2>INFORMACIÓN PRINCIPAL<br></h2>
+                <p><span class="Tit"><i>Nombre completo:</i></span> Rafael Alexander Morales Sandoval</p>
+                <p><span class="Tit"><i>Fecha de nacimiento:</i></span> 27/10/1970</p>
+                <p><span class="Tit"><i>Lugar de nacimiento:</i></span> Sogamoso</p> -->
             </div>
-            <div class="div-ul-li">
+            <div>
                 <ul type="disc">
                     <h2>DATOS PERSONALES<br></h2>
                     <li><span class="Tit"><i>Dirección Residencia:</i></span> Calle 30 No.30-30</li>
@@ -40,7 +53,7 @@
                     <li><span class="Tit"><i>Email:</i></span> casanare@gmail.com</li>
                 </ul>
             </div>
-            <div>
+            <div class="dcv">
                 <a href="file/CV_RAMS.pdf"target="_blank">Descargar CV en pdf</a>
             </div>
         </section>
@@ -48,6 +61,7 @@
     <footer>
         <p>2022 - RAMS &nbsp; <a href="https://www.instagram.com/casanare_/"target="_blank"><img src="img/ico_instagram.png" alt="Icono instagram"></a> &nbsp; <a href="https://www.linkedin.com/in/rafael-alexander-morales-sandoval/"target="_blank"><img src="img/ico_linkedin.png" alt="Icono linkedin"></p></a>
         <p>Todos los derechos reservados</p>
-    </footer>            
+    </footer>
+    <script src="js/app.js"></script>            
 </body>
 </html>

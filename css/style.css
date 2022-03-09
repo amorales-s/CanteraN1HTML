@@ -17,7 +17,11 @@ body {
     background:var(--tertiary-color);
     font-family: 'Roboto';
     color:var(--primary-color);
+    text-align: center;
+    position:relative;
     width: 100%;
+    padding-bottom: 6em;
+    min-height: 100vh;
 }
 
 header{
@@ -43,7 +47,6 @@ h1 {
     padding: 0.5%;
     letter-spacing: 2px;
     text-align: center;
-
 }
     
 h2 {
@@ -83,7 +86,6 @@ nav ul li a:before{
 }
 nav ul li a:hover::before{
     /* ancho final */
-
 }
 
 nav ul li a {
@@ -110,36 +112,38 @@ nav ul li a:hover:after {
 /***Contenido***/
 main{
     width: 1024px;
-    /*display: flex;*/
-    /*margin: 5% auto;*/
     margin-bottom: auto;
+    margin-left: auto;
+    margin-right: auto;
 }
-
+main h2{
+    margin-top: 30px;
+}
 .container {
     width: 100%;
     justify-content:center;
     align-items: center;
-    text-align: justify; 
+    text-align: justify;
     /*margin:0px auto;*/
     margin: auto auto;
 }
+div {
+    margin-top: 30px;
+    margin-bottom: 50px;
+}
 
 .container a{
-    display: inline-block;
+    /*display: inline-block;*/
+    /*position: absolute;*/
     background-color:var(--primary-color);
     color:var(--secondary-color);
     text-decoration: none;
     padding: 15px;
     margin-top: 45px;
-    margin-left:55%;
+    margin-left:38%;
 }
 .container a:hover{
     color:var(--decoration-color);
-}
-
-div {
-    margin-top: 30px;
-    margin-bottom: 50px;
 }
 
 div ul {
@@ -148,8 +152,8 @@ div ul {
     padding-left: 1px;
 }
 
-.div-ul-li{
-    margin-left: 50%;
+div ul li{
+    padding: 2px;
 }
 
 .Tit{
@@ -161,12 +165,40 @@ footer {
     background-color: #F58840;
     color: white;
     font-weight: bold;
+    padding: 1em 0;
+    text-align: center;
     position: absolute;
     bottom: 0;
     width: 100%;
-    height: 65px;
+    /*height: 65px;*/
+    margin-top:0;
 }
 footer p {
     text-align: center;
-    padding: 4.9px;
+    /*padding: 30px 4.9px;*/
+}
+
+/**acordeón**/
+.acordeon {
+    background-color: #f3cd42;
+    color:#000;
+    cursor:pointer;
+    padding:15px;
+    width: 100%;
+    border:none;
+    text-align: left;
+    outline: none;
+    font-size: 16px;
+}
+
+.active, .acordeon:hover {
+    background-color: orange;
+}
+
+.panel{
+    padding:7px 25px;
+    margin:0px 0px;
+    display: none;
+    background-color:cornsilk;
+    overflow:hidden;
 }

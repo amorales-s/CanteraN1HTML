@@ -7,7 +7,7 @@
     <link rel="stylesheet" href="css/style.css">
     <title>EXPERIENCIA LABORAL - RAFAEL ALEXANDER MORALES SANDOVAL</title>
 </head>
-<body>
+<body onload="main()">
     <header>
         <img class="centrar" src="img/Foto_AM.jpg" alt="Foto Rafael Alexander Morales Sandoval">
         <h1>CURRICULUM VITAE<br>RAFAEL ALEXANDER MORALES SANDOVAL</h1>
@@ -17,31 +17,46 @@
                 <li><a href="personales.html">Referencias Personales</a></li>
                 <li><a href="familiares.html">Referencias Familiares</a></li>
                 <li><a href="estudios.html">Estudios Realizados</a></li>
+            </ul>
+            <select class="corazon" name="color">
+                <option value="1">Cambia Color</option> 
+                <option value="2">Blanco</option> 
+                <option value="3">Verde</option>
+                <option value="4">Rosado</option>
+                <option value="5">Original</option> 
+            </select>
         </nav>
     </header>
     <main>
-        <section class="container">
-            <div class="div-ul-li">
-                <ul type="none">
-                    <h2>EXPERIENCIA LABORAL</h2>
-                    <li><span><b>Noviembre 2018 - actualidad</b><br></span> INGENIERO DE SOPORTE TECNICO -- <span> WISETIC<br></span>
-                        <span> Instalación, Soporte y administración infraestructura de redes y comunicaciones, servidores y equipos de cómputo. <br>
-                            Administración sitios web clientes. Administración y soporte Bases de Datos MySQL<br></span></li>
-                    <li><span><b><br>Noviembre 2016 - Diciembre 2017</b><br></span> COORDINADOR DE PROYECTOS -- <span> TNC LTDA<br></span>
-                        <span>Diseñar, formular y ejecutar los proyectos en operación y nuevos en que participe la compañía. Coordinar y controlar <br>
-                            la planificación, presupuesto, inversión, ejecución y avance de los proyectos.<br></span></li>
-                    <li><span><b><br>Mayo 2016 - Diciembre 2016</b></span> PROFESIONAL APOYO SISTMA BANCA COMUNAL -- <span> FUNDACION AMANECER<br></span>
-                        <span>Capacitación, asesoría e implementación nuevo modelo Banca Comunal. Implementación y soporte Software de Gestión de Cartera.<br></span></li>
-                    <li><span><b><br>Marzo 2007 - Mayo 2011</b></span> PROFESIONAL UNIVERSITARIO GRADO 09 -- <span> CORPORINOQUIA<br></span>
-                        <span>Planificar la formulación y ejecución de proyectos tecnológicos de la entidad para el manejo y control de la información ambiental.<br></span></li>     
-                </ul>
-            </div>
-        </section>
+        <h2>EXPERIENCIA LABORAL</h2>
+        <button class="acordeon">Experiencia 1</button>
+        <div class="panel">
+            <p><b>Noviembre 2018 - actualidad</b><br>INGENIERO DE SOPORTE TECNICO <br>WISETIC<br>
+            Instalación, Soporte y administración infraestructura de redes y comunicaciones, servidores y equipos de cómputo.<br>
+            Administración sitios web clientes. Administración y soporte Bases de Datos MySQL</p>
+        </div>
+        <button class="acordeon">Experiencia 2</button>
+        <div class="panel">
+            <p><b>Noviembre 2016 - Diciembre 2017</b><br>COORDINADOR DE PROYECTOS <br>TNC LTDA<br>
+            Diseñar, formular y ejecutar los proyectos en operación y nuevos en que participe la compañía. Coordinar y controlar <br>
+            la planificación, presupuesto, inversión, ejecución y avance de los proyectos.</p>
+        </div>
+        <button class="acordeon">Experiencia 3</button>
+        <div class="panel">
+            <p><b>Mayo 2016 - Diciembre 2016</b><br>PROFESIONAL APOYO SISTMA BANCA COMUNAL<br>FUNDACION AMANECER<br>
+            Capacitación, asesoría e implementación nuevo modelo Banca Comunal. Implementación y soporte Software de Gestión de Cartera.</p>
+        </div>           
+        <button class="acordeon">Experiencia 4</button>
+        <div class="panel">
+            <p><b>Marzo 2007 - Mayo 2011</b><br> PROFESIONAL UNIVERSITARIO GRADO 09 <br> CORPORINOQUIA<br>
+            Planificar la formulación y ejecución de proyectos tecnológicos de la entidad para el manejo y control de la información ambiental.</p>     
+        </div>                
     </main>
-    <footer>
-            
-        <p>2022 - RAMS &nbsp; <a href="https://www.instagram.com/casanare_/"target="_blank"><img src="img/ico_instagram.png" alt="Icono instagram"></a> &nbsp; <a href="https://www.linkedin.com/in/rafael-alexander-morales-sandoval/"target="_blank"><img src="img/ico_linkedin.png" alt="Icono linkedin"></p></a>
+    <footer>  
+        <p>2022 - RAMS &nbsp; <a href="https://www.instagram.com/casanare_/" target="_blank"><img src="img/ico_instagram.png" alt="Icono instagram"></a> &nbsp;
+                    <a href="https://www.linkedin.com/in/rafael-alexander-morales-sandoval/" target="_blank"><img src="img/ico_linkedin.png" alt="Icono linkedin"></p></a>
         <p>Todos los derechos reservados</p>
     </footer>
+    <script src="js/app.js"></script>
 </body>
 </html>

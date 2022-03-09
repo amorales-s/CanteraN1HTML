@@ -8,7 +8,7 @@
     <link rel="stylesheet" href="css/style.css">
     <title>REFERENCIAS PERSONALES - RAFAEL ALEXANDER MORALES SANDOVAL</title>
 </head>
-<body>
+<body onload="main()">
     <header>
         <img class="centrar" src="img/Foto_AM.jpg" alt="Foto Rafael Alexander Morales Sandoval">
         <h1>CURRICULUM VITAE<br>RAFAEL ALEXANDER MORALES SANDOVAL</h1>
@@ -18,42 +18,38 @@
                 <li><a href="experiencia.html">Experiencia Laboral</a></li>
                 <li><a href="familiares.html">Referencias Familiares</a></li>
                 <li><a href="estudios.html">Estudios Realizados</a></li>
+            </ul>
+            <select class="corazon" name="color">
+                <option value="1">Cambia Color</option> 
+                <option value="2">Blanco</option> 
+                <option value="3">Verde</option>
+                <option value="4">Rosado</option>
+                <option value="5">Original</option> 
+            </select>
         </nav>
     </header>
     <main>
-        <section class="container">
-            <div class="div-ul-li">
-                <ul type="disc">
-                    <h2>REFERENCIAS PERSONALES</h2>
-                    <li><span><b>NELSY LEONOR ANGARITA</b></span> 
-                        <ul type="none">
-                            <li><span><i>Dirección Residencia:</i></span> Carrera 25 No.111-25</li>
-                            <li><span><i>Teléfono:</i></span> 3234550625</li>
-                            <li><span><i>Ciudad Residencia:</i></span> Bogotá<br></li>
-                        </ul>
-                    </li>
-                    <li><span><b>DIGNA MARIA UJUETA</b></span> 
-                        <ul type="none">
-                            <li><span><i>Dirección Residencia:</i></span> Calle 7 No.23-20</li>
-                            <li><span><i>Teléfono:</i></span> 3124375556</li>
-                            <li><span><i>Ciudad Residencia:</i></span> Cartagena<br></li>
-                        </ul>
-                    </li>
-                    <li><span><b>DANIEL RAMIREZ</b></span> 
-                        <ul type="none">
-                            <li><span><i>Dirección Residencia:</i></span> Calle 65 No.98-40</li>
-                            <li><span><i>Teléfono:</i></span> 3054023398</li>
-                            <li><span><i>Ciudad Residencia:</i></span> Bogotá</li>
-                        </ul>
-                    </li>
-                </ul>
-            </div>
-        </section>
+        <h2>REFERENCIAS PERSONALES</h2>
+        <button class="acordeon">Referencia 1</button>
+        <div class="panel">
+            <p><b>NELSY LEONOR ANGARITA</b><br><br><i>Dirección Residencia:</i> Carrera 25 No.111-25<br>
+                <i>Teléfono:</i> 3234550625<br><i>Ciudad Residencia:</i> Bogotá</p>
+        </div>
+        <button class="acordeon">Referencia 2</button>
+        <div class="panel">
+            <p><b>DIGNA MARIA UJUETA</b><br><br><i>Dirección Residencia:</i> Calle 7 No.23-20<br>
+                <i>Teléfono:</i> 3124375556<br><i>Ciudad Residencia:</i> Cartagena</p>
+        </div>
+        <button class="acordeon">Referencia 3</button>
+        <div class="panel">
+            <p><b>DANIEL RAMIREZ</b><br><br><i>Dirección Residencia:</i> Calle 65 No.98-40<br>
+                <i>Teléfono:</i> 3054023398<br><i>Ciudad Residencia:</i> Bogotá</p>
+        </div>
     </main>
     <footer>
-            
         <p>2022 - RAMS &nbsp; <a href="https://www.instagram.com/casanare_/"target="_blank"><img src="img/ico_instagram.png" alt="Icono instagram"></a> &nbsp; <a href="https://www.linkedin.com/in/rafael-alexander-morales-sandoval/"target="_blank"><img src="img/ico_linkedin.png" alt="Icono linkedin"></p></a>
         <p>Todos los derechos reservados</p>
     </footer>
+    <script src="js/app.js"></script>
 </body>
 </html>
